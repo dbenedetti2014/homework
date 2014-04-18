@@ -1,0 +1,25 @@
+<h1> Dice</h1>
+
+<% x = rand(6) %>
+<% y = rand(6) %>
+<% a = image_tag("http://www.clker.com/cliparts/m/v/m/J/4/V/dice-1-md.png") %>>
+<% b = image_tag("http://www.clker.com/cliparts/a/Y/E/o/z/t/dice-2-md.png") %>>
+<% c = image_tag("http://t3.gstatic.com/images?q=tbn:ANd9GcRMeJIUu5YWENOXLXSJw720f2VPDZIaQ3jSQEDOyxiX6phKnsxv") %>>
+<% d = image_tag("http://www.clker.com/cliparts/r/z/d/a/L/V/dice-4-md.png") %>>
+<% e = image_tag("http://www.clker.com/cliparts/e/y/7/h/W/K/dice-5-md.png") %>>
+<% f = image_tag("http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=73878768") %>>
+
+<% z = if x == 1 then a elsif x == 2 then b elsif x == 3 then c elsif x == 4 then d elsif x == 5 then e else f end %>
+<% w = if y == 1 then a elsif y == 2 then b elsif y == 3 then c elsif y == 4 then d elsif y == 5 then e else f end %>
+
+<p> First dice rolls number <%= x %> and the second dice rolls number <%= y %> . </p>
+ 
+
+<p> <%= z %> <%= w %> </p>
+
+
+
+
+
+
+
