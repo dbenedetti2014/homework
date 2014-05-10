@@ -1,0 +1,16 @@
+<h1>Books</h1>
+
+
+<% Title.read.each do |title| %>
+<li><%= title.book_title %>-<br>
+
+<% sum = 0 %>
+<% count = 0 %>
+
+<% reviews = Review.where("book_title" => title.book_title) %>
+
+<% reviews.read.each do |review|%>
+<% sum = sum + review.star_rating.to_f %> <% count = count + 1 %> <% end %>
+
+<% average=sum/count if count>0 %>
+<%= number_with_precision(average, :precision => 2) %> <% end %>

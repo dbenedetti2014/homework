@@ -2,6 +2,8 @@ Homework::Application.routes.draw do
 
   get '/dice/roll' => 'homework/dice'
   get '/books/list' => 'books/list'
+
+  get 'books' => 'books/index'
   
 
   # The priority is based upon order of creation: first created -> highest priority.
